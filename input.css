@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+
+
+
+.button1 h1 {
+    display: none;
+  }
+  
+  /* Show the text on hover and hide the icon */
+  .button1:hover i {
+    display: none;
+  }
+  .button1:hover h1 {
+    display: block;
+  }
+
+
+
+
+  .circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+
+    /* background: url("https://assets.codepen.io/7344750/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1657025755&width=512");
+     */
+    background-size: cover;
+    border-radius: 100vmax;
+    background-position: center;
+  }
+  
+  .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: consolas;
+    color: #fff;
+    font-size: 17px;
+    animation: textRotation 8s linear infinite;
+  }
+  
+  @keyframes textRotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+  }
+  
+
+
+
+
+
+
+
+  .marquee {
+    animation: scrolling var(--marquee-time) linear infinite;
+  }
+  
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-width))); }
+  }
+
+
+
+.back{
+  background: rgba( 255, 255, 255, 0.05 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  /* border-radius: 40px; */
+  border: 0px solid rgba( 255, 255, 255, 0.18 );
+}
+  
